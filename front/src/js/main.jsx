@@ -1,22 +1,21 @@
-// Adding styles
-import '../css/main.css';
-
 import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import { Router, hashHistory } from 'react-router';
+
+// Adding styles
+import '../css/main.css';
+
 import configureStore from './store/configureStore';
+import routes from './routes';
 
 const store = configureStore();
 
-import App from './containers/App';
-import { routes } from './routes';
 
 ReactDOM.render(
   <Provider store={store}>
     <Router history={hashHistory} routes={routes} />
   </Provider>,
-  document.getElementById('root')
+  document.getElementById('root'), // eslint-disable-line
 );

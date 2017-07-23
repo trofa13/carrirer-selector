@@ -1,5 +1,5 @@
 #React + Redux carrires selector
-###Prerequisites:
+##Prerequisites:
 1. `NodeJS^7.9.0 + npm`
 
 ###To launch:

@@ -5,12 +5,14 @@ import App from './containers/App';
 import Flights from './containers/Flights';
 import NotFound from './components/NotFound';
 
-export const routes = (
+const routes = (
   <div>
-    <Route path='/' component={App}>
-      <IndexRedirect to='/flights' /> {/* INDEX REDIRECT */}
-      <Route path='/flights' component={Flights} />
+    <Route path="/" component={App}>
+      <IndexRedirect to="/flights" /> {/* INDEX REDIRECT */}
+      <Route path="/flights" component={Flights} />
     </Route>
-    <Route path='*' component={NotFound} />
+    <Route path="*" component={NotFound} />
   </div>
 );
+
+export default routes;

@@ -32,6 +32,11 @@
     "babel-plugin-transform-react-jsx": "^6.23.0",
     "babel-preset-es2015": "^6.22.0",
     "css-loader": "^0.26.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.2",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.1.0",
     "extract-text-webpack-plugin": "^2.0.0-rc.3",
     "file-loader": "^0.10.0",
     "html-loader": "^0.4.4",
@@ -47,6 +52,7 @@
     "start": "npm run start:front & npm run start:back",
     "start:front": "./node_modules/.bin/webpack --config ./front/webpack.config.js --watch",
     "start:back": "./node_modules/.bin/nodemon --ignore front/ app.js --dev",
+    "lint": "./node_modules/.bin/eslint . --ext .js --ext .jsx",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

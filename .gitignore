@@ -1,0 +1,5 @@
+/node_modules
+*.log
+/front/prod
+/front/dev
+*.db
